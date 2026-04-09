@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
+
+*{
+    font-family: 'Playwrite IE', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    color: #333;
+}
+
+nav {
+    background-color: #e0e0e0;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: #f9f9f9;
+    border: 2px solid #333;
+}
+
+section {
+    background-color: #d0d0d0;
+    border: 2px solid #333;
+}
+
+footer {
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    color: #333;
+}
+
+a {
+    border: #333 solid 1px;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-family: 'Playwrite IE', sans-serif;
+    color: #333;
+}
+
+a:hover {
+    color: #007BFF;
+}
+a:active {
+    color: #0056b3;
+}
+a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+
+#banner {
+    width: 1100px;
+}
+
+#banner img {
+    width: 1100px;
+}
+
+#reservas{
+width: 1100px;
+text-align: center;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#reservas__botao{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#reservas__botao:hover{
+    background-color: #0056b3;
+} 
+#reservas__botao:active{
+    background-color: #003d80;
+}
+#reservas__botao:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+area-buscar{
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+}
+.buscar{
+    width: 764px;
+    height: 40px;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+.buscar__campo{
+    flex: 1;
+    border: none;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+}
+.buscar__campo{
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+.buscar__campo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bordados > a > img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+.bordados{
+  text-align: center;
+}
+.catalogo{
+    margin:100px auto;
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
