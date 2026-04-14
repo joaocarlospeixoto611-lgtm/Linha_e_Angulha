@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
 
+:root{
+    --cor-primaria: #ccea8d;
+    --cor-secundaria: #A6BC09;
+    --cor-terciaria: #d0d0d0;
+    --cor-quaternaria: #01415B;
+    --cor-quintenaria: #019587;
+    --cor-sextenaria: #005148;
+    --cor-setenaria: #00E3CC;
+    --cor-octonaria: #009688;
+    --cor-nonenaria: #00635A;
+    --largura-maxima: 1400px;
+}
 *{
     font-family: 'Playwrite IE', sans-serif;
     margin: 0;
@@ -7,14 +19,14 @@
     box-sizing: border-box;
 }
 header {
-    background-color: #f0f0f0;
-    border: 2px solid #333;
-    color: #333;
+    background-color: #ccea8d;
+    border: 2px solid #01415B;
+    color: #019587;
 }
 
 nav {
-    background-color: #e0e0e0;
-    border: 2px solid #333;
+    background-color: #ccea8d;
+    border: 2px solid #01415B;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,34 +43,34 @@ ul {
 }
 
 main {
-    background-color: #f9f9f9;
-    border: 2px solid #333;
+    background-color: #A6BC09;
+    border: 2px solid #01415B;
 }
 
 section {
     background-color: #d0d0d0;
-    border: 2px solid #333;
+    border: 2px solid #01415B;
 }
 
 footer {
-    background-color: #f0f0f0;
-    border: 2px solid #333;
-    color: #333;
+    background-color: #A6BC09;
+    border: 2px solid #01415B;
+    color: #005148;
 }
 
 a {
-    border: #333 solid 1px;
+    border: #01415B solid 1px;
     padding: 5px 10px;
     text-decoration: none;
     font-family: 'Playwrite IE', sans-serif;
-    color: #333;
+    color: #01415B;
 }
 
 a:hover {
-    color: #007BFF;
+    color: #00E3CC;
 }
 a:active {
-    color: #0056b3;
+    color: #009688;
 }
 a:focus {
     outline: none;
@@ -67,11 +79,11 @@ a:focus {
 
 
 #banner {
-    width: 1100px;
+    width: 2000px;
 }
 
 #banner img {
-    width: 1100px;
+    width: 2000px;
 }
 
 #reservas{
@@ -89,17 +101,17 @@ article{
 #reservas__botao{
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007BFF;
+    background-color: #00E3CC;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 #reservas__botao:hover{
-    background-color: #0056b3;
+    background-color: #009688;
 } 
 #reservas__botao:active{
-    background-color: #003d80;
+    background-color: #00635A;
 }
 #reservas__botao:focus{
     outline: none;
@@ -113,7 +125,7 @@ area-buscar{
 .buscar{
     width: 764px;
     height: 40px;
-    border: 2px solid #333;
+    border: 2px solid #00635A;
     display: flex;
     justify-content: center;
     border-radius: 20px;
@@ -138,7 +150,7 @@ area-buscar{
 }
 .bordados > img{
     width: 400px;
-    border: 2px solid #333;
+    border: 2px solid #00635A;
     border-radius: 10px;
 }
 .bordados{
