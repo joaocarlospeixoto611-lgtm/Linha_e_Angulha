@@ -29,7 +29,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    width: var(--largura-celular);
+    width: var(--largura-maxima);
 }
 
 nav {
@@ -74,6 +74,10 @@ a {
     color: #01415B;
 }
 
+main{
+
+    margin-top: 70px;
+}
 a:hover {
     color: #00E3CC;
 }
@@ -89,11 +93,11 @@ a:focus {
 
 
 #banner {
-    width: 2000px;
+    width: var(--largura-maxima);
 }
 
-#banner img {
-    width: 2000px;
+#banner > img {
+    width: var(--largura-maxima)
 }
 
 #reservas {
@@ -131,7 +135,7 @@ article {
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
-area-buscar {
+.area-buscar {
     width: 1400px;
     display: flex;
     justify-content: center;
@@ -195,15 +199,15 @@ area-buscar {
     scroll-margin-top: 110px;
 }
 
-@media screen{
-    
+@media (max-width: 430px) {
+
 
     header {
         width: var(--largura-celular);
         height: 90px;
         position: fixed;
         top: 0;
-    }}
+    }
 
     .area-navegacao {
         width: var(--largura-celular);
@@ -211,51 +215,61 @@ area-buscar {
         justify-content: center;
     }
 
-    .logo{
+    .logo {
         display: none;
     }
 
-    ul{
+    ul {
         gap: 15px;
     }
 
-    .icones{
+    .icones {
         font-size: 30px;
         border: none;
         padding: 20px;
     }
-    .icones:hover, .icones:focus{
+
+    .icones:hover,
+    .icones:focus {
         background-color: none;
         color: none;
     }
 
-    #banner{
+    main {
+        margin-top: 50px;
+    }
+
+    .area-banner {
         width: var(--largura-celular);
     }
 
-    #banner__image{
+    #banner {
         width: var(--largura-celular);
     }
 
-    #reservas{
+   #banner > img {
+        width: var(--largura-celular);
+
+   }
+    #reservas {
         width: 390px;
         border-width: 2px;
     }
 
-    #reservas__titulo{
+    #reservas__titulo {
         font-size: 22px;
     }
 
-    #reservas__botao{
+    #reservas__botao {
         padding: 10px 15px;
         font-size: 18px;
         border-radius: 8px;
     }
 
- .sobre {
-    width: var(--largura-celular);
-    padding: 20px;
- }
+    .sobre {
+        width: var(--largura-celular);
+        padding: 20px;
+    }
 
     .sobre__titulo {
         font-size: 24px;
@@ -266,18 +280,35 @@ area-buscar {
         font-size: 16px;
         line-height: 1.5;
     }
-   #sobre__imagem {
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
-   }
 
-   .buscar {
-    width: 100%;
-    max-width: 400px;
-    height: 40px;
-    border: 2px solid #00635A;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-   }
+    #sobre__imagem {
+        width: 400px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .buscar {
+        width: 350px;
+        height: 40px;
+        border: 2px solid #00635A;
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .catalogo {
+        width: var(--largura-celular);
+        margin: 20px auto;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bordados>img {
+        width: var(--largura-celular);
+        max-width: 400px;
+        border: 2px solid #00635A;
+        border-radius: 10px;
+    }
+}
