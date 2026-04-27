@@ -4,11 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="cadastro.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cadastro</title>
 </head>
 
 <body>
+ <header>
+        <nav class="area-navegacao">
+            <img class="logo" src="logo-tia-sonia.png" alt="logo da tia sonia" class="logo" width="150px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#servicos"><i class="fa-solid fa-scissors"></i></a></li>
+                <li><a href="index.html#carrinho"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+                <li><a href="cadastro.html#usuario"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="area-cadastro">
         <section class="area-titulo">
@@ -19,7 +33,7 @@
 
                 <div class="area-nome">
                     <div class="primeiro-nome formatacao">
-                        <label for="nome">Nome</label>
+                        <label for="nome titulo-campo">Nome</label>
                         <input type="text" id="nome" placeholder="Digite seu nome" required>
                     </div>
                     <div class="ultimo-nome">
@@ -30,54 +44,54 @@
 
                 <div class="area-acesso">
                     <div class="email">
-                        <label for="email">Email</label>
+                        <label for="email titulo-campo">Email</label>
                         <input type="email" id="email" placeholder="Digite seu email" required>
                     </div>
                     <div class="senha">
-                        <label for="senha">Senha</label>
+                        <label for="senha titulo-campo">Senha</label>
                         <input type="password" id="senha" placeholder="●●●●●●●●" required>
                     </div>
                 </div>
 
                 <div class="area-contato">
                     <div class="ddd">
-                        <label for="ddd">ddd</label>
+                        <label for="ddd titulo-campo">ddd</label>
                         <input type="number" max="99" id="ddd" placeholder="ddd" required>
                     </div>
                     <div class="telefone">
-                        <label for="telefone">Telefone</label>
+                        <label for="telefone titulo-campo">Telefone</label>
                         <input type="text" id="telefone" placeholder="Digite seu telefone" required>
                     </div>
                 </div>
                 <div class="area-endereco">
                     <div class="endereco-numero">
                         <div class="endereco">
-                            <label for="endereco">Endereço</label>
+                            <label for="endereco titulo-campo">Endereço</label>
                             <input type="text" id="endereco" placeholder="Digite seu endereço">
                         </div>
                         <div class="numero">
-                            <label for="numero">Número</label>
+                            <label for="numero titulo-campo">Número</label>
                             <input type="number" id="numero" placeholder="000">
                         </div>
                     </div>
                     <div class="cidade-cep">
                         <div class="cidade">
-                            <label for="cidade">Cidade</label>
+                            <label for="cidade titulo-campo">Cidade</label>
                             <input type="text" id="cidade" placeholder="cidade">
                         </div>
                         <div class="cep">
-                            <label for="cep"> Cep </label>
+                            <label for="cep titulo-campo"> Cep </label>
                             <input type="text" id="cep" placeholder="00000-000">
                         </div>
                     </div>
                 </div>
                 <div class="area-dados">
                     <div class="data-nascimento">
-                        <label for="data-nascimento"> Data de Nascimento</label>
+                        <label for="data-nascimento titulo-campo"> Data de Nascimento</label>
                         <input type="date" id="data-nascimento" required>
                     </div>
                     <div class="genero">
-                        <label for="genero">Gênero</label>
+                        <label for="genero titulo-campo">Gênero</label>
                         <select id="genero" required>
                             <option value="" disabled selected>Selecione seu gênero</option>
                             <option value="#">Feminino</option>
