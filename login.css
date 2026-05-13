@@ -1,0 +1,40 @@
+@import url(style.css);
+*{
+    margin: 0;
+    padding: 0;
+}
+.area-titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+}
+.area-acesso{
+    background-color: var(--cor-secundaria);
+    margin-top: 8vh;
+    margin: 50px auto;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+}
+.area-botao{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+#botao-login{
+    width: 150px;
+    padding: 20px;
+    background-color: #00E3CC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
